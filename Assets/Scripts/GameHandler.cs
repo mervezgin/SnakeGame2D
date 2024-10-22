@@ -6,6 +6,9 @@ public class GameHandler : MonoBehaviour
     void Start()
     {
         Debug.Log("GameHandler start");
+        GameObject snakeHeadGameObject = new GameObject();
+        SpriteRenderer snakeSpriteRenderer = snakeHeadGameObject.AddComponent<SpriteRenderer>();
+        snakeSpriteRenderer.sprite = GameAssets.instance.snakeHeadSprite;
     }
 
     // Update is called once per frame
